@@ -34,7 +34,7 @@ const NavigationBar = () => {
     >
       <Container>
         <NavbarBrand href="#home" className="brand">
-          <FaCode className="brand-icon" />
+          {/* <FaCode className="brand-icon" /> */}
           <span className="brand-text">Raj Aryan</span>
         </NavbarBrand>
         
