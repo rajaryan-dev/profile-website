@@ -8,6 +8,8 @@ import {
   FaDatabase,
   FaCode,
   FaHtml5,
+  FaCss3,
+  FaLocationArrow,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -19,6 +21,8 @@ import {
 } from "react-icons/si";
 import "./Projects.css";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { WiDayCloudy } from "react-icons/wi";
+import { MdOutlinePsychology } from "react-icons/md";
 
 const Projects = () => {
   const projects = [
@@ -61,8 +65,8 @@ const Projects = () => {
         "A full-stack blog platform with user authentication, CRUD operations, and responsive design. Built with Node.js, Express, and MongoDB.",
       tech: ["Node.js", "Express", "MongoDB", "EJS"],
       icons: [<FaNodeJs />, <SiExpress />, <FaDatabase />, <FaCode />],
-      github: "#",
-      live: "#",
+      // github: "#",
+      // live: "#",
       image:
         "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
@@ -71,33 +75,48 @@ const Projects = () => {
       description:
         "Classic Tic Tac Toe game built with vanilla HTML, CSS, and JavaScript. Features include game logic, score tracking, and responsive design.",
       tech: ["HTML", "CSS", "JavaScript"],
-      icons: [<FaCode />, <FaCode />, <FaCode />],
-      github: "#",
-      live: "#",
+      icons: [<FaHtml5 />, <FaCss3 />, <SiJavascript />],
+      github: "https://github.com/rajaryan2003/tic-tac-toe",
+      live: "https://raj-aryan-tic-tac-toe.netlify.app",
       image:
-        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1668901382969-8c73e450a1f5?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Tic Tac Toe - React",
+      title: "TextUtils - React App",
       description:
-        "Modern Tic Tac Toe game built with React. Includes game state management, player turns, win detection, and game reset functionality.",
+        " A React application that provides various text manipulation utilities such as word count, character count and text transformation features.",
       tech: ["React", "JavaScript", "CSS"],
-      icons: [<FaReact />, <FaCode />, <FaCode />],
-      github: "#",
-      live: "#",
+      icons: [<FaReact />, <SiJavascript />, <SiCss3 />],
+      // github: "#",
+      // live: "#",
       image:
-        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://user-images.githubusercontent.com/79099734/189593798-94357cb9-40ec-45e1-a9ae-78c364a0780f.png",
     },
     {
-      title: "Portfolio Website",
+      title: "Real-Time Weather Forecast App",
       description:
-        "A modern, responsive portfolio website built with React and Bootstrap. Features smooth animations, dark/light mode, and mobile-first design.",
-      tech: ["React", "Bootstrap", "CSS"],
-      icons: [<FaReact />, <SiBootstrap />, <FaCode />],
-      github: "#",
-      live: "#",
+        "A responsive web app that provides real-time weather data based on user search or current location. It uses the WeatherAPI and browser geolocation to fetch live data, with clean UI and modular React components.",
+
+      tech: [
+        "React",
+        "Javascript",
+        "CSS",
+        "Context API",
+        "WeatherAPI",
+        "Geolocation API",
+      ],
+      icons: [
+        <FaReact />,
+        <SiJavascript />,
+        <FaCss3 />,
+        <MdOutlinePsychology />,
+        <WiDayCloudy />,
+        <FaLocationArrow />,
+      ],
+      github: "https://github.com/rajaryan2003/weather-app",
+      live: "https://weather-app-rajaryan.netlify.app",
       image:
-        "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1530563885674-66db50a1af19?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169",
     },
   ];
 
