@@ -26,8 +26,11 @@ import {
   SiFirebase,
   SiTailwindcss,
   SiNextdotjs,
+  SiOpenai,
 } from "react-icons/si";
 import "./Skills.css";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { IoText } from "react-icons/io5";
 
 const Skills = () => {
   const skillCategories = [
@@ -95,6 +98,16 @@ const Skills = () => {
         { name: "Object Oriented Programming", icon: <FaCode /> },
       ],
       color: "#00f2fe",
+    },
+    {
+      title: "AI & Emerging Tech",
+      icon: <GiArtificialIntelligence />,
+      skills: [
+        { name: "Generative AI", icon: <SiOpenai /> },
+        { name: "Prompt Engineering", icon: <IoText /> },
+        { name: "OpenAI API ", icon: <SiOpenai /> },
+      ],
+      color: "#667eea",
     },
     {
       title: "Soft Skills",
